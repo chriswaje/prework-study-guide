@@ -133,8 +133,32 @@
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul><!--start of Git notes-->
-          <li>Enter Git notes here</li>
-          <li>Enter more Git notes here</li>
+        <h4>The following is known as the GitHub flow</h4>
+          <li>Before starting on a new branch &rarr; git checkout main &rarr; git pull origin main &rarr; git checkout -b <i>new branch file name</i>
+            &rarr; navigate to desired folder if needed &rarr; touch <i>file name</i> &rarr; code .</li>
+          <li> After working on a feature branch &rarr; git add -A &rarr; git commit -m "<i>message</i>" &rarr; git pull origin main &rarr; git push origin 
+            <i>name of branch</i> &rarr; complete a pull request on GitHub &rarr; merge the pull request &rarr; close the issue &rarr; git checkout main &rarr; 
+            git pull origin main</li>
+        <h3>The following are some common commands used in Git</h3>
+          <li><strong>pwd</strong> displays the current working directory</li>
+          <li><strong>ls</strong> displays the list of files and folders in the current directory</li>
+          <li><strong>cd</strong> navigates between directories in the path</li>
+          <li><strong>cd ..</strong> navigates backwars, one level at a time, through the path of your directories</li>
+          <li><strong>mkdir</strong> creates a new directory</li>
+          <li><strong>touch <i>file name</i></strong> creates a file inside a directory under the title <i>name</i></li>
+          <li><strong>start</strong> opens a file</li>
+          <li><strong>git checkout</strong> navigates you to a branch in the working directory</li>
+          <li><strong>git checkout main</strong> navigates you to the main branch in the working directory</li>
+          <li><strong>git checkout -b <i>name</i></strong> creates and navigates a new feature branch in the repository under the title <i>name</i></li>
+          <li><strong>git pull</strong> pulls a specific brnach from the remote repository and updates the local repository to match content</li>
+          <li><strong>git pull origin main</strong> pulls the main branch from the origin remote repository and merges it with 
+              the current branch checked out</li>
+          <li><strong>git add -A</strong> stages the new files to the local repository</li>
+          <li><strong>git commit -m "<i>message</i>"</strong> commits all files in the working branch; the <strong>-m</strong> flag is used to associate
+              a "<i>message</i>" with our commit</li>
+          <li><strong>git push</strong> pushes our commits on the local branch to the remote branch</li>
+          <li><strong>git push origin <i>name of branch</i></strong> pushes the local branch to a remote repository with the title <i>name of branch</i></li>
+          <li><strong>code .</strong> opens VS code where you can work on writing the code under the necessary file(s)</li>
         </ul><!--end of Git notes-->
       </section>
       <section class="card" id="javascript-section">
@@ -146,6 +170,7 @@
               <li>You can power websites with effects, interactivity, data communication, and much more!</li>
             </ul><!--end of subnote-->
           </li>
+          <li>In JavaScript, the code to be executed is written inside <strong>curly brackets {}</strong></li>
           <li><strong>Variable</strong> is a named container that allows us to  store data in our code</li>
           <li>We use the <strong>var</strong> keyword to delcare a variable then give the variable a name 
               (must be unique because it is how we will reference the information stored in the varaible in our code)</li>
@@ -159,8 +184,66 @@
           <li><strong>Control flow</strong> is the order in which a computer executes code in a script
             <ul><!--start of subnote-->
               <li>The computer reads code in a linear fashion, so the order in which we write our code is very important!</li>
+              <li>Control flow can be interrupted; using conditional statements and loops can control the order in which code is executed 
+                or even executed at all</li>
             </ul><!--end of subnote-->
           </li>
+          <li><strong>Conditionals</strong> are code structures used to test if an expression returns true or not. A very common form of Conditionals
+              is the <strong>if...else</strong> statement</li>
+          <li><strong>"If" statements</strong> are a way of introducing decision-making into our code
+            <ul><!--start of nested list-->
+              <li>Code will only execute if the statement meets a condition or is true; otherwise, it will ignore whatever is in between the curly
+                brackets and move on</li>
+              <li>A false value will be expressed as one of the following: 0, -0, On, "", null, undefined, NaN, or a Boolean data type with value false</li>
+              <li>We can have more than one condition in JavaScript by using <strong>else if</strong></li>
+            </ul><!--end of nested list-->
+          </li>
+          <li><strong>Array</strong> is a single variable that is used to hold a group of data (can be single or multiple data types)
+            <ul><!--start of subnote-->
+              <li>Typically used to hold data that is related in some way</li>
+            </ul><!--end of subnote-->
+          </li>
+          <li><strong>Index</strong> is a unique number used to identify the location of the data item in the array
+            <ul><!--start of subnote-->
+              <li>Note that in JavaScript and many other programming languages, arrays are zero-indexed (i.e. starts with 0) and sequential</li>
+            </ul><!--end of subnote-->
+          </li>
+          <li><strong>For loop</strong> uses the predictable pattern of indices to perform a task on all the items in an array by allowing a single code
+          block to be executed over and over</li>
+          <li>In order to use the <strong>for loop</strong>, we need the shape's index and the array's length
+            <ul><!--start of nested list-->
+              <li>The array length is important because the for loop needs to know how many times the code will run until there are no items left in the array</li>
+              <li><strong>Length</strong> is a built-in property of an array that we can use to find the length of an array</li>
+            </ul><!--end of nest list-->
+          </li>
+          <li>A <strong>for loop</strong> contains the following three important statements
+            <ul><!--start of nested list-->
+              <li>The first statement determines the <strong>starting point of our loop</strong></li>
+              <li>The second statement is the <strong>condition</strong></li>
+              <li>The final statement is what allows the array to iterate over each item
+                <ul><!--start of subnote-->
+                  <li>Since the indices follow a predictable pattern, we know the number increases by 1 each time. The code <strong>x++</strong> is a shortcut
+                      way of writing x+1</li>
+                </ul><!--end of subnote-->
+              </li>
+            </ul><!--end of nest list-->
+          </li>
+          <li><strong>Function</strong> is a set of instructions that tells the computer how to perform a certain task
+            <ul><!--start of subnote-->
+              <li>Unlike for loops, <strong>functions</strong> do not automatically execute when the JavaScript file is run. You must call it by name in order to execute</li>
+              <li><strong>Arguments</strong> are bits of data that functions use to do their job</li>
+            </ul><!--end of subnote-->
+          </li>
+          <li>There are 2 requirements for a JavaScript function
+            <ul><!--start of nested list-->
+              <li>1. Define the function</li>
+              <li>2. Call the function</li>
+            </ul><!--end of nested list-->
+          </li>
+          <li>To create a <strong>function</strong> we use the <strong>function</strong> keyword, similar to how we used the <strong>var</strong> keyword to delcare
+              a new variable. A function's name is followed by parentheses</li>
+          <li>When we delcare a function in our JavaScript code, we are creating a reusable block of code that performs a specific task</li>
+          <li>To randomize a selection from an array, we need to use a special <strong>Math</strong> function</li>
         </ul><!--end of JavaScript notes-->
       </section>
     </main>
