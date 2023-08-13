@@ -16,31 +16,152 @@
     <main>
       <section class="card" id="html-section">
         <h2>HTML</h2>
-        <ul>
-          <li>Enter you HTML notes here</li>
-          <li>Add more HTML notes here</li>
-        </ul>
+        <ul><!--start of HTML notes list-->
+          <li>HyperText Markup language (HTML) gives our content <strong>structure</strong>.</li>
+          <li>It is made up of elements which work together to provide content and the basic framework for all pages on the web</li>
+          <li>An <strong>element</strong> is a type of content on a webpage (i.e. text, image, header, list, etc.)</li>
+          <li>Common element types are used to divide and describe a page
+            <ul><!--start of subnote-->
+                <li>Meta-related elements, content division elements, and semantic elements</li>
+            </ul><!--end of subnote-->
+          </li>
+          <li>Building a sturdy fram using HTML is the first thing to think about when developing a webpage</li>
+          <li>HTML elements are usually composed of an opening tag and a closing represented with angle brackets (&lt&gt)
+            <ul><!--start of subnote-->
+              <li>Two especially important ones are the &lthead&gt and &ltbody&gt elements</li>
+            </ul><!--end of subnote-->
+          </li>
+          <li><strong>&lthead&gt</strong> element contains information, or metadata, that helps the browser to render the page correctly
+            <ul><!--start of subnote-->
+              <li>Elements includeed within this are not visible when a user looks at a webpage</li>
+            </ul><!--end of subnote-->
+            </li>
+            <li><strong>&ltbody&gt</strong> element contains the content that is shown to the user.
+            <ul><!--start of subnote-->
+              <li>All the elements that we want the user to see and interact with must be placed inside this element</li>
+            </ul><!--end of subnote-->
+            </li>
+            <li><strong>&lt!DOCTYPE html&gt</strong> is a declaration telling the browser what document type it should expect when it is opened; 
+              it is letting the browser know to expect HTML on the page</li>
+              <li>Declarations are not case-sensitive but HTML elements are</li>
+              <li><strong>&lthtml&gt</strong> tag represents the root of our HTML document
+                <ul><!--start of subnote-->
+                  <li>Inside the tag is an attribute of <strong>lang="en"</strong> which tells the browser the language for the webpage</li>
+                </ul><!--end of subnote-->
+                </li>
+              <li><strong>HTML attribute</strong> defines additional information about an element
+                <ul><!--start of subnote-->
+                  <li>These are always defined in the beginning element, never the closing element </li>
+                </ul><!--end of subnote-->
+              </li>
+              <li><strong>Metdata</strong> is data about our webpage that the browser uses to effectively serve our webpage to users. This contains 
+                  important information about accessibility, search engines, and performance</li>
+              <li>The following  metadata tags can be found inside the <strong>&lthead&gt</strong> element
+                <ul><!--start of nested list-->
+                  <li><strong>&lttitle&gt</strong> element defines the title for a webpage. This is required and is extremely important for Search engines
+                      optimization (SEO)</li>
+                  <li><strong>&ltstyle&gt</strong> element defines the CSS style associated with a website</li>
+                  <li><strong>&ltbase&gt</strong> element defines the base URL for a webpage</li>
+                  <li><strong>&ltlink&gt</strong> element connects an external resource to the HTML document</li>
+                  <li><strong>&ltmeta&gt</strong> element defines metadata such as the character set, description, keywords, author, and viewport</li>
+                  <li><strong>&ltscript&gt</strong> element embeds client-side scripts in the HTML document</li>
+                </ul><!--end of nested list-->
+              </li>
+              <li><strong>&lt/head&gt</strong> and <strong>&lt/body&gt</strong> are considered closing tags; the / before "head" and "body" indicates closing</li>
+              <li><strong>Charset</strong> element sets our character encoding</li>
+              <li><strong>Http-equiv</strong> element sets an HTTP header for content</li>
+              <li><strong>Viewport</strong> element sets the default view for our webpage</li>
+              <li><strong>Child elements</strong> are elements that are nested inside other elements
+                <ul><!--start of subnote-->
+                  <li><strong>&lthead&gt</strong> and <strong>&ltbody&gt</strong> would be considered <strong>parent elements</strong> while the elements inside them 
+                      would be considered <strong>child elements</strong></li>
+                </ul><!--end of subnote-->
+              </li>
+              <li><strong>Semantic HTML elements</strong> describe its content and the role it plays on a webpage
+                <ul><!--start of subnote-->
+                  <li>Non-semantic elements such as <strong>&ltdiv&gt</strong> and <strong>&ltspan&gt</strong> are also used as an efficient solution to a structural problem</li>
+                </ul><!--end of subnote-->
+              </li>
+              <li>The following metadata tags can be found inside the <strong>&ltbody&gt</strong> element
+                <ul><!--start of nested list-->
+                  <li><strong>&lth#&gt (h1,h2,...h6)</strong> elements represent the level of heading a given text block represents</li>
+                  <li><strong>&ltp&gt</strong> element represents a paragraph or block of text</li>
+                  <li><strong>&ltul&gt, &ltol&gt, &ltli&gt</strong> elements represent unordered lists, ordered lists, and list items</li>
+                  <li><strong>&ltimg&gt</strong> element contains information about images that are displayed on the webpage
+                    <ul><!--start of another nested list-->
+                      <li>This can contain various attributes such as the <strong>src=</strong> attribute since it defines the location of the image</li>
+                      <li>Can also contain an attribute known as <strong>alt</strong> which contains a text string that describes the appearance and functionality of the image
+                          (text does not show on user end)</li>
+                    </ul><!--end of another nested list-->
+                  </li>
+                  <li><strong>&ltbr&gt</strong> element creates a line of empty space, or a line break, between two blocks of content</li>
+                  <li><strong>&lta&gt</strong> element (which stands for <strong>anchor</strong>) creates links to the same webpage or other webapges</li>
+                  <li><strong>href=</strong> attribute points to the URL for the link</li>
+                  <li><strong>&ltheader&gt</strong> appears at the top of the page and usually contains a navigation menu and/or introductory content</li>
+                  <li><strong>&ltsection&gt</strong> elements are semantic elements that define a section in a document that contains thematic content</li>
+                </ul><!--end of nested  list-->
+              </li>
+              <li>HTML uses the <strong>id</strong> attribute as a way to identify elements and select them</li>
+        </ul><!--end of HTML notes list-->
       </section>
       <section class="card" id="css-section">
         <h2>CSS</h2>
-        <ul>
-          <li>Enter your CSS notes here</li>
-          <li>Enter more CSS notes here</li>
-        </ul>
+        <ul><!--start of CSS notes-->
+          <li>Cascading Style Sheets (CSS) gives the content <strong>style</strong></li>
+          <li>It is a programming language used by developers to define how webpage content is presented to users (defines colors, aesthetics, visual layout, and organization)</li>
+          <li>There are three ways to style a webpage using CSS: <strong>inline CSS, internal CSS style sheet,</strong> and <strong>external CSS style sheet</strong></li>
+          <li><strong>Inline CSS</strong> applies to a specific HTML tag, using a style attribute with a CSS rule to style a particular page lement only; these are quick and 
+              permanent changes but are less flexible than external and internal style sheets</li>
+          <li><strong>Internal CSS style sheet</strong> contains CSS rules for the webpage in the head section of the HTML file</li>
+          <li><strong>External CSS style sheet</strong> (most common way to style a webpage) allows developers to keep all their CSS rules in a separate file, which makes design
+              changes easier</li>
+          <li><strong>Selector</strong> defines the element or attributes to which the rules, or declaration, will apply</li>
+          <li><strong>Declarations</strong> contain two improtant components: the CSS property we want to apply and the value of the property</li>
+          <li><strong>Margin</strong> property indicates how much space we want around the <strong>outside</strong> of an element. This is not visible on the page</li>
+          <li><strong>Padding</strong> property adds space around the content <strong>inside</strong> an element</li>
+          <li>We use a special symbol <strong>* (asterisk)</strong> when we want to apply a rule to all the elements visible on the page</li>
+          <li>Two or more elements that will share the same styling can be grouped together using a comma</li>
+          <li><strong>rel</strong> attribute specifies the relationship between the current document and the linked document resource</li>
+          <li> <strong>Class attributes</strong> allow us to share a CSS rule to any element we choose by assigning the rule to a class attribute with a class selector
+            <ul><!--start of subnote-->
+                <li>We use a period preceding <strong>card</strong> to designate this as a class selector; therefore, any HTML element assigned to the class "card" will
+                    gain the property from the CSS</li>
+            </ul><!--end of subnote-->
+          </li>
+        </ul><!--end of CSS notes-->
       </section>
       <section class="card" id="git-section">
         <h2>Git</h2>
-        <ul>
+        <ul><!--start of Git notes-->
           <li>Enter Git notes here</li>
           <li>Enter more Git notes here</li>
-        </ul>
+        </ul><!--end of Git notes-->
       </section>
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
-        <ul>
-          <li>Enter JavaScript notes here</li>
-          <li>Example would be some Git shortcuts</li>
-        </ul>
+        <ul><!--start of JavaScript notes-->
+          <li>JavaScript handles the <strong>logic</strong> and <strong>interactivity</strong> of a website</li>
+          <li>It is a high-level dynamic programming language that allows users to interact with websites
+            <ul><!--start of subnote-->
+              <li>You can power websites with effects, interactivity, data communication, and much more!</li>
+            </ul><!--end of subnote-->
+          </li>
+          <li><strong>Variable</strong> is a named container that allows us to  store data in our code</li>
+          <li>We use the <strong>var</strong> keyword to delcare a variable then give the variable a name 
+              (must be unique because it is how we will reference the information stored in the varaible in our code)</li>
+          <li> We use an assignment operator <strong>= (equal sign)</strong> to assign the specific data that we want stored in our variable</li>
+          <li>It is important to note that each line of JavaScript code ends with a semicolon</li>
+          <li><strong>String</strong> a sequence of text that is always enclosed within quotation marks</li>
+          <li>We can use the <strong>console.log</strong> method to output a message to the web console by adding an argument</li>
+          <li>Arguments are bits of data that variables/methods use to do their job</li>
+          <li><strong>Method</strong> is a set of instructions that can be executed by a computer</li>
+          <li>The <strong>.log()</strong> method will output whatever we add inside the parentheses to the console</li>
+          <li><strong>Control flow</strong> is the order in which a computer executes code in a script
+            <ul><!--start of subnote-->
+              <li>The computer reads code in a linear fashion, so the order in which we write our code is very important!</li>
+            </ul><!--end of subnote-->
+          </li>
+        </ul><!--end of JavaScript notes-->
       </section>
     </main>
 
